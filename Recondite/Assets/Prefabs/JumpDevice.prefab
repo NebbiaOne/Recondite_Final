@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1745ccb09951d64fa6bf90630f769c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vBounce: 700
+  vBounce: 900
