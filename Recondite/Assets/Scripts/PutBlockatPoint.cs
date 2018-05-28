@@ -15,7 +15,7 @@ public GameObject obj;
 		//if (Physics.Raycast (transform.position, Vector3.down, out hit))
 		if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
 		{
-			if(hit.collider != GetComponent<Collider>() && hit.transform.tag != "Player")
+			if(hit.collider != GetComponent<Collider>() && hit.transform.tag == "Floor")
 			obj.transform.position = hit.point;
 		}
 	}
