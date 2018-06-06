@@ -12,25 +12,25 @@ public class PlayerController : MonoBehaviour {
     private float moveFBRaw, moveLRRaw;
     public float moveSpeed = 1f;
     public float jumpheight = 10000;
-
     public float rotationSpeed = 5f;
-
     public Rigidbody rbody;
-
     public static GameObject _player;
+    Animator animator;
 
     void Start () {
         _player = gameObject;
         rbody = GetComponent<Rigidbody> ();
+        //thisVector3 = Vector3(98,-5,12);
+        animator = GetComponent<Animator>();
     }
 
     void Update () {
 
-        if (Input.GetButtonDown("Jump")) {
+       /* if (Input.GetButtonDown("Jump")) {
 
             GetComponent<Rigidbody>().AddForce (0, jumpheight * Time.deltaTime, 0);
 
-        }
+        }*/
 
         cameraBase.transform.position = transform.position;
 
@@ -41,10 +41,12 @@ public class PlayerController : MonoBehaviour {
        
         cameraBase.localEulerAngles = new Vector3 (mouseY, mouseX, 0);
 
-        moveFB = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
-        moveLR = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
+        moveFB = Input.GetAxis ("Vertical") ;//* moveSpeed * Time.deltaTime; 
+        moveLR = Input.GetAxis ("Horizontal"); //* moveSpeed * Time.deltaTime;
         moveFBRaw = Input.GetAxisRaw ("Vertical");
         moveLRRaw = Input.GetAxisRaw ("Horizontal");
+        animator.SetFloat("xMov", moveFB);
+        animator.SetFloat("yMov", moveLR);
 
         if (moveFB != 0 || moveLR != 0) {
 
@@ -54,10 +56,17 @@ public class PlayerController : MonoBehaviour {
             }
     
             Vector3 movement = new Vector3 (moveLR, 0, moveFB);
-            movement = transform.TransformDirection (movement);
+            movement = transform.TransformDirection (movement * moveSpeed * Time.deltaTime);
             rbody.velocity = new Vector3 (movement.x, rbody.velocity.y, movement.z);
-            
+
+       
 
         }
+             if (moveFB != 0 || moveLR != 0) {
+                animator.SetBool("Moving", true);
+            }else{
+                  animator.SetBool("Moving", false);
+
+            }
     }
 }

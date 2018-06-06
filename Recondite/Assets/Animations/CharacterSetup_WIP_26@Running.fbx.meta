@@ -103,7 +103,7 @@ ModelImporter:
     400094: mixamorig:Spine
     400096: mixamorig:Spine1
     400098: mixamorig:Spine2
-    7400000: Running
+    7400000: $Running
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -134,7 +134,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Running
+      name: $Running
       takeName: mixamo.com
       firstFrame: 0
       lastFrame: 25
