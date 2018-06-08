@@ -464,14 +464,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SetIntValue
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.SetIntValue
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 000000
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 48c0110127fbe103603dd905
+        - 
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0000000000
+        actionStartIndex: 000000000300000006000000090000000c000000
+        actionHashCodes: 48c0110127fbe103603dd90527fbe103603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -506,9 +510,33 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: CrateCount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams:
         - useVariable: 1
           name: PlayerDead
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: CrateLimitReached
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -526,12 +554,12 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Restart
-        byteData: 000000
+        byteData: 0000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000001700000001000000110000001100000001000000100000001000000001000000
+        paramDataType: 0f0000001700000001000000110000001100000001000000100000001000000001000000110000001100000001000000100000001000000001000000
         paramName:
         - time
         - finishEvent
@@ -542,8 +570,14 @@ MonoBehaviour:
         - intVariable
         - intValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000100000001000000000000000100000002000000
-        paramByteDataSize: 000000000000000001000000000000000000000001000000000000000000000001000000
+        - boolVariable
+        - boolValue
+        - everyFrame
+        - intVariable
+        - intValue
+        - everyFrame
+        paramDataPos: 000000000000000000000000000000000100000001000000000000000100000002000000020000000300000003000000020000000300000004000000
+        paramByteDataSize: 000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000
     - name: Restart
       description: 
       colorIndex: 0

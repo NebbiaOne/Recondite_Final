@@ -21,16 +21,18 @@ public class PlayerController : MonoBehaviour {
         _player = gameObject;
         rbody = GetComponent<Rigidbody> ();
         //thisVector3 = Vector3(98,-5,12);
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator> ();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update () {
 
-       /* if (Input.GetButtonDown("Jump")) {
+        /* if (Input.GetButtonDown("Jump")) {
 
-            GetComponent<Rigidbody>().AddForce (0, jumpheight * Time.deltaTime, 0);
+             GetComponent<Rigidbody>().AddForce (0, jumpheight * Time.deltaTime, 0);
 
-        }*/
+         }*/
 
         cameraBase.transform.position = transform.position;
 
@@ -38,15 +40,15 @@ public class PlayerController : MonoBehaviour {
         mouseY -= Input.GetAxis ("Mouse Y") * mouseSensitivity;
 
         mouseY = Mathf.Clamp (mouseY, -40f, 40f);
-       
+
         cameraBase.localEulerAngles = new Vector3 (mouseY, mouseX, 0);
 
-        moveFB = Input.GetAxis ("Vertical") ;//* moveSpeed * Time.deltaTime; 
-        moveLR = Input.GetAxis ("Horizontal"); //* moveSpeed * Time.deltaTime;
+        moveFB = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
+        moveLR = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
         moveFBRaw = Input.GetAxisRaw ("Vertical");
         moveLRRaw = Input.GetAxisRaw ("Horizontal");
-        animator.SetFloat("xMov", moveFB);
-        animator.SetFloat("yMov", moveLR);
+        animator.SetFloat ("xMov", moveFB);
+        animator.SetFloat ("yMov", moveLR);
 
         if (moveFB != 0 || moveLR != 0) {
 
@@ -54,19 +56,17 @@ public class PlayerController : MonoBehaviour {
                 //Match to camera base rotation
                 transform.localEulerAngles = new Vector3 (transform.localEulerAngles.x, cameraBase.localEulerAngles.y, transform.localEulerAngles.z);
             }
-    
+
             Vector3 movement = new Vector3 (moveLR, 0, moveFB);
             movement = transform.TransformDirection (movement * moveSpeed * Time.deltaTime);
             rbody.velocity = new Vector3 (movement.x, rbody.velocity.y, movement.z);
 
-       
+        }
+        if (moveFB != 0 || moveLR != 0) {
+            animator.SetBool ("Moving", true);
+        } else {
+            animator.SetBool ("Moving", false);
 
         }
-             if (moveFB != 0 || moveLR != 0) {
-                animator.SetBool("Moving", true);
-            }else{
-                  animator.SetBool("Moving", false);
-
-            }
     }
 }
