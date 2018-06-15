@@ -393,31 +393,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &1102523022986836704
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Picking Up Object
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 27cdb4a388e885b4e942ea806b6d18dd, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &1102559396208368086
 AnimatorState:
   serializedVersion: 5
@@ -616,14 +591,11 @@ AnimatorStateMachine:
     m_State: {fileID: 1102680619619461116}
     m_Position: {x: 300, y: 132, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102523022986836704}
-    m_Position: {x: 780, y: -48, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: 1102705463730767202}
     m_Position: {x: 576, y: 24, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102559396208368086}
-    m_Position: {x: 36, y: 216, z: 0}
+    m_Position: {x: 60, y: 216, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102984316951676838}
     m_Position: {x: 300, y: 24, z: 0}
