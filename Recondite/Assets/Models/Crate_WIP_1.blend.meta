@@ -11,7 +11,12 @@ ModelImporter:
     4300000: Cube
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100006, guid: bcb4b3b0d5772aa448bb97ad85fe962e, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
