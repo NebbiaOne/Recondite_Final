@@ -141,7 +141,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 100
+        y: 116
         width: 103
         height: 32
       isBreakpoint: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 010001
+        actionIsOpen: 000000
         actionStartIndex: 000000001300000021000000
         actionHashCodes: d7249c0386d459009c512400
         unityObjectParams: []
@@ -405,8 +405,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 244
-        y: 102
+        x: 242
+        y: 107
         width: 100
         height: 16
       isBreakpoint: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0101
+        actionIsOpen: 0000
         actionStartIndex: 0000000003000000
         actionHashCodes: 603dd90562f95203
         unityObjectParams: []
@@ -479,6 +479,9 @@ MonoBehaviour:
         paramDataPos: 00000000010000000000000000000000
         paramByteDataSize: 00000000000000000100000000000000
     events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
     - name: Pickup Key
       isSystemEvent: 0
       isGlobal: 0
