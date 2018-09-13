@@ -4358,7 +4358,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 10
+          value: 12
         fsmBoolParams:
         - useVariable: 1
           name: Interactable
@@ -4809,6 +4809,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntOperator
         - HutongGames.PlayMaker.Actions.iTweenMoveBy
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
         - 
@@ -4818,10 +4819,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000001
-        actionStartIndex: 00000000030000000500000007000000090000000b0000001000000023000000
-        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac8520414180903d7249c035ac85204
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000101
+        actionStartIndex: 00000000030000000500000007000000090000000b000000100000002300000025000000
+        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac8520414180903d7249c035ac852041b142f01
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -4839,6 +4841,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1544620199}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1178774977}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -5512,7 +5522,14 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 87baf51645433dd4aabb7c4efdab87c1, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -5541,6 +5558,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: KeyCount
@@ -5553,7 +5576,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 10
+          value: 12
         - useVariable: 1
           name: KeyCount
           tooltip: 
@@ -5617,12 +5640,13 @@ MonoBehaviour:
         stringParams:
         - 
         - 
+        - 
         byteData: 000000000001000000000e00000002000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000
+        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000140000000f0000001800000017000000
         paramName:
         - boolVariable
         - boolValue
@@ -5661,8 +5685,12 @@ MonoBehaviour:
         - loopDontFinish
         - targetProperty
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000030000000400000000000000010000000500000002000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a000000
-        paramByteDataSize: 00000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000000000000040000000000000001000000000000000000000000000000000000000000000000000000040000000400000004000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000001000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - finishedEvent
+        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000030000000400000000000000010000000500000002000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a00000001000000040000000000000002000000
+        paramByteDataSize: 0000000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000000000004000000000000000100000000000000000000000000000000000000000000000000000004000000040000000400000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
     - name: KeyCheck
       description: 
       colorIndex: 0
@@ -10711,6 +10739,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntOperator
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
         - 
@@ -10720,13 +10749,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000000
-        actionStartIndex: 00000000030000000500000007000000090000000b0000001000000012000000
-        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac85204141809035ac852045ac85204
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000001
+        actionStartIndex: 00000000030000000500000007000000090000000b000000100000001200000014000000
+        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac85204141809035ac852045ac852041b142f01
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1178774977}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -11375,7 +11413,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
+            enumName: HutongGames.PlayMaker.None
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -11384,7 +11422,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: 
+            objectTypeName: UnityEngine.Object
             floatValues: []
             intValues: 
             boolValues: 
@@ -11507,7 +11545,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
+            enumName: HutongGames.PlayMaker.None
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -11516,7 +11554,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: 
+            objectTypeName: UnityEngine.Object
             floatValues: []
             intValues: 
             boolValues: 
@@ -11526,11 +11564,24 @@ MonoBehaviour:
           setProperty: 1
         layoutOptionParams: []
         fsmStringParams: []
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 87baf51645433dd4aabb7c4efdab87c1, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: KeyCount
@@ -11568,13 +11619,14 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
+        stringParams:
+        - 
         byteData: 000000000001000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000024000000010000002400000001000000
+        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000024000000010000002400000001000000140000000f0000001800000017000000
         paramName:
         - boolVariable
         - boolValue
@@ -11596,8 +11648,12 @@ MonoBehaviour:
         - everyFrame
         - targetProperty
         - everyFrame
-        paramDataPos: 00000000010000000000000000000000010000000100000002000000020000000300000003000000040000000000000001000000050000000200000009000000040000000a000000050000000b000000
-        paramByteDataSize: 0000000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000000000004000000000000000100000000000000010000000000000001000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - finishedEvent
+        paramDataPos: 00000000010000000000000000000000010000000100000002000000020000000300000003000000040000000000000001000000050000000200000009000000040000000a000000050000000b00000000000000000000000000000000000000
+        paramByteDataSize: 000000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000000000000400000000000000010000000000000001000000000000000100000000000000000000000000000000000000
     - name: KeyCheck
       description: 
       colorIndex: 0
@@ -20337,7 +20393,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 116
+        y: 100
         width: 104
         height: 48
       isBreakpoint: 0
@@ -20356,7 +20412,7 @@ MonoBehaviour:
           name: CrateCheat
           isSystemEvent: 0
           isGlobal: 0
-        toState: Activate
+        toState: AddCount
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -20370,7 +20426,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 010100
+        actionIsOpen: 010101
         actionStartIndex: 000000000300000008000000
         actionHashCodes: 27fbe1039c512400ff77a904
         unityObjectParams: []
@@ -20461,8 +20517,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 249
-        y: 110
+        x: 300.0547
+        y: 105.6875
         width: 100
         height: 32
       isBreakpoint: 0
@@ -20539,7 +20595,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 118.9375
-        y: 197.74219
+        y: 181.74219
         width: 100
         height: 48
       isBreakpoint: 0
@@ -20568,7 +20624,7 @@ MonoBehaviour:
         customNames:
         - 
         actionEnabled: 01
-        actionIsOpen: 01
+        actionIsOpen: 00
         actionStartIndex: 00000000
         actionHashCodes: 09faa102
         unityObjectParams: []
@@ -20630,7 +20686,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 387.23438
-        y: 186.17188
+        y: 170.17188
         width: 100
         height: 32
       isBreakpoint: 0
@@ -20657,7 +20713,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 00000001
+        actionIsOpen: 00000000
         actionStartIndex: 00000000130000001600000018000000
         actionHashCodes: d7249c0327fbe1035ac85204a4c8bf00
         unityObjectParams: []
@@ -24119,6 +24175,130 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc27e180a2097a8438ee179ee2f1f1b9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &793624230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 793624231}
+  - component: {fileID: 793624232}
+  m_Layer: 0
+  m_Name: CrateTower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793624231
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793624230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1468853526}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &793624232
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793624230}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 269d13cc4d81175438dfeee85bac4560, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &800700076
 GameObject:
   m_ObjectHideFlags: 0
@@ -34636,6 +34816,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntOperator
         - HutongGames.PlayMaker.Actions.iTweenMoveBy
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
         - 
@@ -34645,10 +34826,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000101
-        actionStartIndex: 00000000030000000500000007000000090000000b0000001000000023000000
-        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac8520414180903d7249c035ac85204
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000101
+        actionStartIndex: 00000000030000000500000007000000090000000b000000100000002300000025000000
+        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac8520414180903d7249c035ac852041b142f01
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -34666,6 +34848,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 144046003}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1178774977}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -35339,7 +35529,14 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 87baf51645433dd4aabb7c4efdab87c1, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -35368,6 +35565,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: KeyCount
@@ -35444,12 +35647,13 @@ MonoBehaviour:
         stringParams:
         - 
         - 
+        - 
         byteData: 000000000001000000000e00000002000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000
+        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000140000000f0000001800000017000000
         paramName:
         - boolVariable
         - boolValue
@@ -35488,8 +35692,12 @@ MonoBehaviour:
         - loopDontFinish
         - targetProperty
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000030000000400000000000000010000000500000002000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a000000
-        paramByteDataSize: 00000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000000000000040000000000000001000000000000000000000000000000000000000000000000000000040000000400000004000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000001000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - finishedEvent
+        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000030000000400000000000000010000000500000002000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a00000001000000040000000000000002000000
+        paramByteDataSize: 0000000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000000000004000000000000000100000000000000000000000000000000000000000000000000000004000000040000000400000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
     - name: KeyCheck
       description: 
       colorIndex: 0
@@ -39891,6 +40099,130 @@ GameObject:
   m_PrefabParentObject: {fileID: 1492101121172902, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
     type: 2}
   m_PrefabInternal: {fileID: 1236226209}
+--- !u!1 &1178774977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1178774978}
+  - component: {fileID: 1178774979}
+  m_Layer: 0
+  m_Name: ActivateVoice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178774978
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178774977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1468853526}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1178774979
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178774977}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 87baf51645433dd4aabb7c4efdab87c1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1181048829 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4808806372966800, guid: cc27e180a2097a8438ee179ee2f1f1b9,
@@ -40518,6 +40850,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114082698830469456, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224617031802045876, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -40642,6 +40979,36 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082698830469456, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082698830469456, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082698830469456, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046600759}
+    - target: {fileID: 114082698830469456, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082698830469456, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082698830469456, guid: d6e32f49ea433bc46b8029e8d58bb9cc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Restart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6e32f49ea433bc46b8029e8d58bb9cc, type: 2}
@@ -49354,6 +49721,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.iTweenMoveBy
         - HutongGames.PlayMaker.Actions.iTweenMoveBy
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
         - 
@@ -49365,10 +49733,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101010101
-        actionIsOpen: 00000000000000000000
-        actionStartIndex: 00000000030000000500000007000000090000000e00000010000000230000003600000049000000
-        actionHashCodes: 27fbe1035ac852045ac852045ac85204141809035ac85204d7249c03d7249c03d7249c035ac85204
+        - 
+        actionEnabled: 0101010101010101010101
+        actionIsOpen: 0000000000000000000001
+        actionStartIndex: 00000000030000000500000007000000090000000e000000100000002300000036000000490000004b000000
+        actionHashCodes: 27fbe1035ac852045ac852045ac85204141809035ac85204d7249c03d7249c03d7249c035ac852041b142f01
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -49414,6 +49783,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1739799513}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1178774977}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -50099,7 +50476,14 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 87baf51645433dd4aabb7c4efdab87c1, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -50176,6 +50560,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: KeyCount
@@ -50188,7 +50578,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 4
+          value: 2
         - useVariable: 1
           name: KeyCount
           tooltip: 
@@ -50328,12 +50718,13 @@ MonoBehaviour:
         - 
         - 
         - 
+        - 
         byteData: 000000000100000000000d0000000200000000000000000000000d0000000200000000000000000000000d00000002000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000001000000010000000070000001000000001000000240000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f00000007000000170000001700000011000000110000001100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f00000007000000170000001700000011000000110000001100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000
+        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000001000000010000000070000001000000001000000240000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f00000007000000170000001700000011000000110000001100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f00000007000000170000001700000011000000110000001100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000140000000f0000001800000017000000
         paramName:
         - boolVariable
         - boolValue
@@ -50410,8 +50801,12 @@ MonoBehaviour:
         - loopDontFinish
         - targetProperty
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000000000000100000004000000020000000800000003000000090000000000000000000000000000000000000001000000020000000a0000000e00000012000000020000000000000001000000030000001600000000000000010000000300000004000000050000000100000001000000020000000400000005000000060000001a0000001e000000220000000600000001000000030000000700000026000000020000000300000007000000080000000900000002000000020000000400000008000000090000000a0000002a0000002e000000320000000a00000002000000050000000b0000003600000004000000050000000b0000000c0000000d000000040000003a000000
-        paramByteDataSize: 000000000000000001000000000000000100000000000000010000000000000001000000000000000000000004000000000000000100000000000000010000000000000000000000000000000000000000000000000000000400000004000000040000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000040000000400000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000400000004000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000001000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - finishedEvent
+        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000000000000100000004000000020000000800000003000000090000000000000000000000000000000000000001000000020000000a0000000e00000012000000020000000000000001000000030000001600000000000000010000000300000004000000050000000100000001000000020000000400000005000000060000001a0000001e000000220000000600000001000000030000000700000026000000020000000300000007000000080000000900000002000000020000000400000008000000090000000a0000002a0000002e000000320000000a00000002000000050000000b0000003600000004000000050000000b0000000c0000000d000000040000003a000000030000000c0000000000000006000000
+        paramByteDataSize: 00000000000000000100000000000000010000000000000001000000000000000100000000000000000000000400000000000000010000000000000001000000000000000000000000000000000000000000000000000000040000000400000004000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000004000000040000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000040000000400000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
     - name: KeyCheck
       description: 
       colorIndex: 0
@@ -52994,7 +53389,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -53009,7 +53404,7 @@ MonoBehaviour:
     handleCollisionEnter2D: 0
     handleCollisionExit2D: 0
     handleCollisionStay2D: 0
-    handleTriggerEnter: 0
+    handleTriggerEnter: 1
     handleTriggerExit: 0
     handleTriggerStay: 0
     handleCollisionEnter: 0
@@ -53062,8 +53457,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 150
-        y: 216
+        x: 54
+        y: 120
         width: 104
         height: 48
       isBreakpoint: 0
@@ -53082,7 +53477,7 @@ MonoBehaviour:
           name: CrateCheat
           isSystemEvent: 0
           isGlobal: 0
-        toState: Activate
+        toState: AddCount
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -53187,8 +53582,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 349
-        y: 210
+        x: 253
+        y: 114
         width: 100
         height: 32
       isBreakpoint: 0
@@ -53206,15 +53601,25 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 603dd905
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 603dd9051b142f01
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 793624230}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -53222,11 +53627,24 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 269d13cc4d81175438dfeee85bac4560, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: CrateCount
@@ -53246,26 +53664,31 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
+        stringParams:
+        - 
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000
+        paramDataType: 100000001000000001000000140000000f0000001800000017000000
         paramName:
         - intVariable
         - add
         - everyFrame
-        paramDataPos: 000000000100000000000000
-        paramByteDataSize: 000000000000000001000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - finishedEvent
+        paramDataPos: 00000000010000000000000000000000000000000000000000000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000000000000
     - name: Check
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 218.9375
-        y: 297.7422
+        x: 122.9375
+        y: 201.74219
         width: 100
         height: 48
       isBreakpoint: 0
@@ -53355,8 +53778,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 487.23438
-        y: 286.17188
+        x: 391.23438
+        y: 190.17188
         width: 100
         height: 32
       isBreakpoint: 0
@@ -53966,6 +54389,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2081526694}
+  - {fileID: 1178774978}
+  - {fileID: 793624231}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -62448,6 +62873,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.iTweenMoveBy
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
         - 
@@ -62457,10 +62883,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000000
-        actionStartIndex: 00000000030000000500000007000000090000000e0000001000000023000000
-        actionHashCodes: 27fbe1035ac852045ac852045ac85204141809035ac85204d7249c035ac85204
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000001
+        actionStartIndex: 00000000030000000500000007000000090000000e000000100000002300000025000000
+        actionHashCodes: 27fbe1035ac852045ac852045ac85204141809035ac85204d7249c035ac852041b142f01
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -62478,6 +62905,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 704815352}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1178774977}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -63126,7 +63561,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
+            enumName: HutongGames.PlayMaker.None
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -63135,7 +63570,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: 
+            objectTypeName: UnityEngine.Object
             floatValues: []
             intValues: 
             boolValues: 
@@ -63151,7 +63586,14 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 87baf51645433dd4aabb7c4efdab87c1, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -63180,6 +63622,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: KeyCount
@@ -63256,12 +63704,13 @@ MonoBehaviour:
         stringParams:
         - 
         - 
+        - 
         byteData: 000000000100000000001600000000000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000001000000010000000070000001000000001000000240000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000
+        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000001000000010000000070000001000000001000000240000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000140000000f0000001800000017000000
         paramName:
         - boolVariable
         - boolValue
@@ -63300,8 +63749,12 @@ MonoBehaviour:
         - loopDontFinish
         - targetProperty
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000000000000100000004000000020000000800000003000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a000000
-        paramByteDataSize: 00000000000000000100000000000000010000000000000001000000000000000100000000000000000000000400000000000000010000000000000001000000000000000000000000000000000000000000000000000000040000000400000004000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000001000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - finishedEvent
+        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000000000000100000004000000020000000800000003000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a00000001000000040000000000000002000000
+        paramByteDataSize: 0000000000000000010000000000000001000000000000000100000000000000010000000000000000000000040000000000000001000000000000000100000000000000000000000000000000000000000000000000000004000000040000000400000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
     - name: KeyCheck
       description: 
       colorIndex: 0
@@ -67039,6 +67492,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntOperator
         - HutongGames.PlayMaker.Actions.iTweenMoveBy
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.AudioPlay
         customNames:
         - 
         - 
@@ -67048,10 +67502,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000001
-        actionStartIndex: 00000000030000000500000007000000090000000b0000001000000023000000
-        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac8520414180903d7249c035ac85204
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 000000000000000101
+        actionStartIndex: 00000000030000000500000007000000090000000b000000100000002300000025000000
+        actionHashCodes: 27fbe1035ac852045ac852045ac852045ac8520414180903d7249c035ac852041b142f01
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -67069,6 +67524,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 329822390}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1178774977}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -67742,7 +68205,14 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 87baf51645433dd4aabb7c4efdab87c1, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -67771,6 +68241,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: KeyCount
@@ -67847,12 +68323,13 @@ MonoBehaviour:
         stringParams:
         - 
         - 
+        - 
         byteData: 000000000001000000000e00000002000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000
+        paramDataType: 1100000011000000010000002400000001000000240000000100000024000000010000002400000001000000100000001000000007000000100000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f0000000700000017000000170000001100000011000000110000002400000001000000140000000f0000001800000017000000
         paramName:
         - boolVariable
         - boolValue
@@ -67891,8 +68368,12 @@ MonoBehaviour:
         - loopDontFinish
         - targetProperty
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000030000000400000000000000010000000500000002000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a000000
-        paramByteDataSize: 00000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000000000000040000000000000001000000000000000000000000000000000000000000000000000000040000000400000004000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000001000000
+        - gameObject
+        - volume
+        - oneShotClip
+        - finishedEvent
+        paramDataPos: 000000000100000000000000000000000100000001000000020000000200000003000000030000000400000000000000010000000500000002000000090000000000000000000000000000000000000001000000020000000a0000000e0000001200000002000000000000000100000003000000160000000000000001000000030000000400000005000000040000001a00000001000000040000000000000002000000
+        paramByteDataSize: 0000000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000000000004000000000000000100000000000000000000000000000000000000000000000000000004000000040000000400000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
     - name: KeyCheck
       description: 
       colorIndex: 0
@@ -68452,7 +68933,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.084
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -68544,7 +69025,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh18738
+  m_Name: pb_Mesh21370
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
