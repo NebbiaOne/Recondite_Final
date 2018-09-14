@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 890ab785e67f2e745b0ae2cb351e05d4
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Ammo_1
+    100002: Ammo_2
+    100004: Ammo_3
+    100006: //RootNode
+    100008: Cube_000
+    100010: Cube_001
+    100012: Cube_002
+    100014: Cube_003
+    100016: Cube_004
+    100018: Cube_005
+    100020: Cube_015
+    100022: Droid_socket_1
+    100024: Retopo_Mesh
+    100026: Retopo_Mesh_001
+    100028: Retopo_Mesh_002
+    100030: Retopo_Mesh_003
+    100032: Retopo_Mesh_004
+    100034: Retopo_Mesh_005
+    100036: Shirt_1
+    400000: Ammo_1
+    400002: Ammo_2
+    400004: Ammo_3
+    400006: //RootNode
+    400008: Cube_000
+    400010: Cube_001
+    400012: Cube_002
+    400014: Cube_003
+    400016: Cube_004
+    400018: Cube_005
+    400020: Cube_015
+    400022: Droid_socket_1
+    400024: Retopo_Mesh
+    400026: Retopo_Mesh_001
+    400028: Retopo_Mesh_002
+    400030: Retopo_Mesh_003
+    400032: Retopo_Mesh_004
+    400034: Retopo_Mesh_005
+    400036: Shirt_1
+    2100000: unnamed
+    2300000: Ammo_1
+    2300002: Ammo_2
+    2300004: Ammo_3
+    2300006: Cube_000
+    2300008: Cube_001
+    2300010: Cube_002
+    2300012: Cube_003
+    2300014: Cube_004
+    2300016: Cube_005
+    2300018: Cube_015
+    2300020: Droid_socket_1
+    2300022: Retopo_Mesh
+    2300024: Retopo_Mesh_001
+    2300026: Retopo_Mesh_002
+    2300028: Retopo_Mesh_003
+    2300030: Retopo_Mesh_004
+    2300032: Retopo_Mesh_005
+    2300034: Shirt_1
+    3300000: Ammo_1
+    3300002: Ammo_2
+    3300004: Ammo_3
+    3300006: Cube_000
+    3300008: Cube_001
+    3300010: Cube_002
+    3300012: Cube_003
+    3300014: Cube_004
+    3300016: Cube_005
+    3300018: Cube_015
+    3300020: Droid_socket_1
+    3300022: Retopo_Mesh
+    3300024: Retopo_Mesh_001
+    3300026: Retopo_Mesh_002
+    3300028: Retopo_Mesh_003
+    3300030: Retopo_Mesh_004
+    3300032: Retopo_Mesh_005
+    3300034: Shirt_1
+    4300000: Cube_005
+    4300002: Cube_004
+    4300004: Cube_003
+    4300006: Cube_002
+    4300008: Cube_001
+    4300010: Cube_000
+    4300012: Cube_015
+    4300014: Retopo_Mesh_005
+    4300016: Retopo_Mesh
+    4300018: Shirt_1
+    4300020: Retopo_Mesh_001
+    4300022: Ammo_3
+    4300024: Ammo_2
+    4300026: Ammo_1
+    4300028: Droid_socket_1
+    4300030: Retopo_Mesh_003
+    4300032: Retopo_Mesh_004
+    4300034: Retopo_Mesh_002
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
