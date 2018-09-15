@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FailScreen.unity
     guid: be259232916d1ff40ab3a733d2fd2084
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 1b5e059b6df5e07419956c3f6ed057e4
   m_configObjects: {}
