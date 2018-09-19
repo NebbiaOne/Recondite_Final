@@ -1,49 +1,14 @@
 fileFormatVersion: 2
-guid: a91a55eceef41ed4b9a1a0d6f951f36c
+guid: e47198bfb92253445ad3980dfdb00f20
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Pipe_1m
-    100004: Pipe_2M
-    100006: Pipe_3M
-    100008: PipeCurve
-    100010: PipeWallBrace
-    100012: WallSocketBasic
-    100014: WallSocketCog
     400000: //RootNode
-    400002: Pipe_1m
-    400004: Pipe_2M
-    400006: Pipe_3M
-    400008: PipeCurve
-    400010: PipeWallBrace
-    400012: WallSocketBasic
-    400014: WallSocketCog
-    2100000: Connector
-    2100002: Pipe
-    2300000: Pipe_1m
-    2300002: Pipe_2M
-    2300004: Pipe_3M
-    2300006: PipeCurve
-    2300008: PipeWallBrace
-    2300010: WallSocketBasic
-    2300012: WallSocketCog
-    3300000: Pipe_1m
-    3300002: Pipe_2M
-    3300004: Pipe_3M
-    3300006: PipeCurve
-    3300008: PipeWallBrace
-    3300010: WallSocketBasic
-    3300012: WallSocketCog
-    4300000: Pipe_2M
-    4300002: Pipe_3M
-    4300004: PipeWallBrace
-    4300006: WallSocketBasic
-    4300008: Pipe_1m
-    4300010: WallSocketCog
-    4300012: PipeCurve
-    7400000: Default Take
-    9500000: //RootNode
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: PipeCurve
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -119,7 +84,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
